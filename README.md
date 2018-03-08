@@ -18,7 +18,7 @@ compose(['hello ', 'in '], ['everybody ', 'the ', 'world '])
 
 // the function engine is a tagged template
 const name = 'foo'
-function engine (chunks, data) {
+function engine (chunks, ...data) {
   return compose(chunks, data)
 }
 
